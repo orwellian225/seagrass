@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SeaGrass - Blog</title>
+    <script src="/htmx.min.js"></script>
+  </head>
+
+
+    <body>
+        <h1 class="text-2xl text-stone-950">SeaGrass - Blog</h1>
+        <a href="/">Go Here</a>
+        
+        <hr>
+        
+        <span class="w-screen h-32">
+            <button class="w-full text-md" hx-get="/blog/one.html" hx-swap="innerHTML"
+                hx-target="#post-content">One</button>
+            <button class="w-full text-md" hx-get="/blog/two.html" hx-swap="innerHTML"
+                hx-target="#post-content">Two</button>
+        </span>
+        <div class="w-full h-full" id="post-content">
+        
+        </div>
+    </body>
+</html>
