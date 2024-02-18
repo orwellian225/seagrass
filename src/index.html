@@ -10,23 +10,33 @@
 
   <body class="w-screen min-h-screen h-fit bg-stone-50 flex flex-col justify-start items-center gap-10 p-2 overflow-y-auto overflow-x-hidden">
 
-    <div class="w-full h-fit flex flex-col md:flex-row gap-3 border-b-4 border-rose-of-sharon-700 justify-center items-center p-2">
-      <h1 class="text-4xl">SeaGrass</h1>
-      <section class="w-full h-full flex flex-col">
-        <h2 class="text-xl">Brendan Griffiths</h2>
-        <p>A South African with too many thoughts and dreams</p>
+    <div class="w-full h-fit flex flex-col md:flex-row gap-3 md:gap-10 border-b-4 border-rose-of-sharon-700 justify-start items-center py-2 md:px-5">
+      <h1 class="text-4xl w-fit">SeaGrass</h1>
+
+      <section class="w-full h-full flex flex-col justify-center items-center md:items-start">
+        <h2 class="text-xl">Brendan Craig Griffiths</h2>
+        <p>A stranger with too many thoughts and dreams</p>
+      </section>
+
+      <section class="w-full h-fit collapse md:visible flex flex-row gap-2 justify-end items-center">
+            <a class="p-1 rounded-xl border-2 border-black hover:border-rose-of-sharon-800" href="https://github.com/orwellian225"><img src="/icons/github.svg" alt="Github Profile"></a>
+            <a class="p-1 rounded-xl border-2 border-black hover:border-rose-of-sharon-800" href="https://www.linkedin.com/in/brendan-griffiths-65a142226"><img src="/icons/linkedin.svg" alt="LinkedIn Profile"></a>
       </section>
     </div>
 
-    <div class="w-4/5 h-2/5 min-h-32 flex justify-between items-start gap-5 flex-col md:flex-row">
+    <div class="w-11/12 h-2/5 min-h-32 flex justify-between items-start gap-5 flex-col md:flex-row">
       <section class="home-section">
         <h2 class="text-2xl">Me Things</h2> 
 
         <ul class="w-full space-y-2">
-          <li>I'm a South African programmer, born and raised in the Vale. I spend my time programming, reading and watching movies in far too expensive IMAX cinemas.</li>
+          <li>I'm a South African programmer, born and raised in the Vale. I spend my time programming, reading, and watching movies in far too expensive IMAX cinemas.</li>
           <li>SeaGrass comes from my initials and all round pretentious cleverness. It's just an easy reference for people to find my website! Which you've done a great job of btw :)</li>
-          <li>CV</li>
-          <li>Contact Details</li>
+          <li>CV: Short & Long</li>
+          <li class="flex flex-row md:collapse py-1 gap-2 justify-start items-center">
+            Useful stuff:
+            <a class="p-1 rounded-xl border-2 border-black hover:border-rose-of-sharon-800" href="https://github.com/orwellian225"><img src="/icons/github.svg" alt="Github Profile"></a>
+            <a class="p-1 rounded-xl border-2 border-black hover:border-rose-of-sharon-800" href="https://www.linkedin.com/in/brendan-griffiths-65a142226"><img src="/icons/linkedin.svg" alt="LinkedIn Profile"></a>
+          </li>
         </ul>
       </section>
 
@@ -34,11 +44,8 @@
         <h2 class="text-2xl">Thought Things</h2> 
 
         <ul class="w-full space-y-2">
-          <li>Code Thoughts</li>
-          <li>Movie Thoughts</li>
-          <li>Book Thoughts</li>
-          <li>Game Thoughts</li>
-          <li>Stray Thoughts</li>
+          <li><i>I haven't been thinking very much lately</i></li>
+          <li><i>Come back when you think I might've been smart recently</i></li>
         </ul>
       </section>
       <section class="home-section">
@@ -52,7 +59,9 @@
         <h2 class="text-2xl">Done Things</h2> 
 
         <ul class="w-full space-y-2">
-          <li>BSc Computer Science @ <a href="https://www.wits.ac.za/course-finder/undergraduate/science/computer-science/">Wits</a></li>
+          <li>BSc Computer Science @ <a class="underline text-rose-of-sharon-950" href="https://www.wits.ac.za/course-finder/undergraduate/science/computer-science/">Wits</a></li>
+          <li>Made a <a href="https://wits-sg.github.io/CGV-Project/">video game</a> with some friends and for some marks</li>
+          <li>Built a <a href="https://recipio.co.za">food and recipe social media</a> with the same friends. We won the best project for it even</li>
         </ul>
       </section>
       <section class="home-section">
@@ -71,14 +80,6 @@
       </section>
     </div>
 
-    <!-- <div class="collapse lg:visible w-full h-48 space-y-2">
-      <section class="w-full h-full rounded-md"></section>
-
-      <section class="flex flex-row justify-evenly items-center">
-        <button class="border-2 border-lime-500 rounded-md hover:bg-stone-100 min-w-32 px-4" hx-trigger="revealed, click" hx-get="/games/game_of_life.html" hx-swap="innerHTML" hx-target="previous section">Game of Life</button>
-        <button class="border-2 border-lime-500 rounded-md hover:bg-stone-100 min-w-32 px-4" hx-get="/games/snake.html" hx-swap="innerHTML" hx-target="previous section">Snake</button>
-      </section>
-    </div> -->
   </body>
 
 </html>
