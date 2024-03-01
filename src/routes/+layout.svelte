@@ -13,9 +13,9 @@
 <header class="w-full h-fit flex flex-col md:flex-row gap-3 md:gap-10 border-b-4 border-rose-of-sharon-700 justify-start items-center md:py-2 md:px-5">
     <h1 class="text-4xl w-fit"><a href="/">SeaGrass</a></h1>
 
-    <section class="w-full h-full flex flex-col justify-center items-center md:items-start">
-    <h2 class="text-xl">Brendan Craig Griffiths</h2>
-    <p>A stranger with too many thoughts and dreams</p>
+    <section class="w-full h-full flex flex-col justify-center items-center md:items-start px-2 md:px-0">
+        <h2 class="text-xl">Brendan Craig Griffiths</h2>
+        <p>A stranger with too many thoughts and dreams</p>
     </section>
 
     <section class="w-full h-fit collapse md:visible flex flex-row gap-2 justify-end items-center">
