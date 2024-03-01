@@ -6,6 +6,7 @@
 
 <svelte:head>
     <title>SeaGrass</title>
+    <link rel="icon" type="image/svg" href="/favicon.svg">
 </svelte:head>
 
 <svelte:body class="w-screen min-h-screen h-fit bg-stone-50 flex flex-col justify-start items-center gap-10 p-2 overflow-y-auto overflow-x-hidden" />
