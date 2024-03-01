@@ -24,7 +24,7 @@
     </section>
 </header>
 
-<main class="w-11/12 h-2/5 min-h-[88vh] flex justify-between items-start gap-5 flex-col md:flex-row">
+<main class="w-full h-2/5 min-h-fit md:min-h-[88vh] px-2 md:px-5">
     <slot />
 </main>
 
