@@ -15,7 +15,7 @@
         @apply border-rose-of-sharon-700
     }
 
-    a {
+    .link {
         @apply underline text-rose-of-sharon-950
     }
 }

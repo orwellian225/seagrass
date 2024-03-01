@@ -10,8 +10,8 @@
 
   <body class="w-screen min-h-screen h-fit bg-stone-50 flex flex-col justify-start items-center gap-10 p-2 overflow-y-auto overflow-x-hidden">
 
-    <div class="w-full h-fit flex flex-col md:flex-row gap-3 md:gap-10 border-b-4 border-rose-of-sharon-700 justify-start items-center md:py-2 md:px-5">
-      <h1 class="text-4xl w-fit">SeaGrass</h1>
+    <header class="w-full h-fit flex flex-col md:flex-row gap-3 md:gap-10 border-b-4 border-rose-of-sharon-700 justify-start items-center md:py-2 md:px-5">
+      <h1 class="text-4xl w-fit"><a href="/">SeaGrass</a></h1>
 
       <section class="w-full h-full flex flex-col justify-center items-center md:items-start">
         <h2 class="text-xl">Brendan Craig Griffiths</h2>
@@ -22,16 +22,15 @@
             <a class="p-1 rounded-xl border-2 border-black hover:border-rose-of-sharon-800" href="https://github.com/orwellian225"><img src="/icons/github.svg" alt="Github Profile"></a>
             <a class="p-1 rounded-xl border-2 border-black hover:border-rose-of-sharon-800" href="https://www.linkedin.com/in/brendan-griffiths-65a142226"><img src="/icons/linkedin.svg" alt="LinkedIn Profile"></a>
       </section>
-    </div>
+    </header>
 
-    <div class="w-11/12 h-2/5 min-h-32 flex justify-between items-start gap-5 flex-col md:flex-row">
+    <main class="w-11/12 h-2/5 min-h-32 flex justify-between items-start gap-5 flex-col md:flex-row" id="content">
       <section class="home-section">
         <h2 class="text-2xl">Me Things</h2> 
 
         <ul class="w-full space-y-2">
           <li>I'm a South African programmer, born and raised in the Vale. I spend my time programming, reading, and watching movies in far too expensive IMAX cinemas.</li>
           <li>SeaGrass comes from my initials and all round pretentious cleverness. It's just an easy reference for people to find my website! Which you've done a great job of btw :)</li>
-          <li>CV: Short & Long</li>
           <li class="flex flex-row md:collapse py-1 gap-2 justify-start items-center">
             Useful stuff:
             <a class="p-1 rounded-xl border-2 border-black hover:border-rose-of-sharon-800" href="https://github.com/orwellian225"><img src="/icons/github.svg" alt="Github Profile"></a>
@@ -44,41 +43,41 @@
         <h2 class="text-2xl">Thought Things</h2> 
 
         <ul class="w-full space-y-2">
-          <li><i>I haven't been thinking very much lately</i></li>
-          <li><i>Come back when you think I might've been smart recently</i></li>
+          <li><i>I think I'm being smart, don't, however trust me.</i></li>
+          <li><a class="border-l-2 px-2 border-rose-of-sharon-700 flex justify-start items-center rounded-md hover:border-b-2" hx-get="/blog/dunetwo.html" hx-swap="innerHTML" hx-target="main">Dune Part 2</a></li>
         </ul>
       </section>
       <section class="home-section">
         <h2 class="text-2xl">Doing Things</h2> 
 
         <ul class="w-full space-y-2">
-          <li>BSc Hons Computer Science @ <a href="https://www.wits.ac.za/course-finder/postgraduate/science/computer-science/">Wits</a></li>
+          <li>BSc Hons Computer Science @ <a class="link" href="https://www.wits.ac.za/course-finder/postgraduate/science/computer-science/">Wits</a></li>
+          <li>Research Project: Quantum Computing and Graph Theory</li>
         </ul>
       </section>
       <section class="home-section">
         <h2 class="text-2xl">Done Things</h2> 
 
         <ul class="w-full space-y-2">
-          <li>BSc Computer Science @ <a class="underline text-rose-of-sharon-950" href="https://www.wits.ac.za/course-finder/undergraduate/science/computer-science/">Wits</a></li>
-          <li>Made a <a href="https://wits-sg.github.io/CGV-Project/">video game</a> with some friends and for some marks</li>
-          <li>Built a <a href="https://recipio.co.za">food and recipe social media</a> with the same friends. We won the best project for it even</li>
+          <li>BSc Computer Science @ <a class="link" href="https://www.wits.ac.za/course-finder/undergraduate/science/computer-science/">Wits</a></li>
+          <li>Made a <a class="link" href="https://wits-sg.github.io/CGV-Project/">video game</a> with some friends and for some marks</li>
+          <li>Built a <a class="link" href="https://recipio.co.za">food and recipe social media</a> with the same friends. We won the best project for it even</li>
         </ul>
       </section>
       <section class="home-section">
         <h2 class="text-2xl">Cool Things</h2> 
 
         <ul class="w-full space-y-2">
-          <li>Built SeaGrass with <a href="https://htmx.org/">HTMX</a></li>
+          <li>Built SeaGrass with <a class="link" href="https://htmx.org/">HTMX</a></li>
         </ul>
       </section>
       <section class="home-section">
         <h2 class="text-2xl">Stray Things</h2> 
 
         <ul class="w-full" hx-boost="true">
-          <li><a href="Two2sMake5/">Two 2s Make 5</a></li>
         </ul>
       </section>
-    </div>
+    </main>
 
   </body>
 
