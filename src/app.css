@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .home-section {
+        @apply w-full h-fit flex flex-col justify-start items-start gap-3 p-1 border-b-2 border-stone-50 hover:border-rose-of-sharon-900
+    }
+    .home-section > h2 {
+        @apply border-b-2 border-stone-50 text-2xl
+    }
+    .home-section:hover > h2 {
+        @apply border-rose-of-sharon-700
+    }
+}

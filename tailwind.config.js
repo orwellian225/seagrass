@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./src/**/*.html"
+     './src/**/*.{html,js,svelte,ts}'
   ],
   theme: {
     extend: {
@@ -19,7 +19,7 @@ export default {
           '900': '#78340f',
           '950': '#451a03',
         },
-      }
+      },
     },
   },
   plugins: [],
