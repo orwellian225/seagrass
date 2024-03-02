@@ -1,5 +1,5 @@
 <div class="w-full h-full flex flex-row justify-start items-start px-2 gap-4">
-    <section class="w-full md:w-1/5 h-full border-r-4 border-science-blue-600 flex flex-col gap-4 md:py-5 md:px-4">
+    <section class="collapse md:visible w-full md:w-1/5 h-full border-r-4 border-science-blue-600 flex flex-col gap-4 md:py-5 md:px-4">
         <h3 class="text-2xl">Quantum Computing</h3>
 
         <ul class="w-fit space-y-2">
@@ -12,7 +12,7 @@
         </ul>
     </section>
 
-    <div class="collapse md:visible w-full h-full py-5">
+    <div class="w-full h-full py-5">
         <slot />
     </div>
 </div>
