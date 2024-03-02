@@ -43,6 +43,10 @@
 
     <section class="home-section">
         <h2>Cool Things</h2>
+
+        <ul class="w-full space-y-2">
+          <li><a class="border-x-2 px-2 border-rose-of-sharon-700 rounded-md hover:border-b-2" href="/turing-machines">Turing Machines</a></li>
+        </ul>
     </section>
 
     <section class="home-section">

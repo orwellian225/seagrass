@@ -29,6 +29,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"lucide-svelte": "^0.344.0"
+		"lucide-svelte": "^0.344.0",
+		"mathjax-full": "^3.2.2",
+		"svelte-katex": "^0.1.2"
 	}
 }
