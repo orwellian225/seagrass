@@ -6,13 +6,15 @@
 
 <svelte:head>
     <title>SeaGrass</title>
-    <link rel="icon" type="image/svg" href="/favicon.svg">
 </svelte:head>
 
 <svelte:body class="w-screen min-h-screen h-fit bg-stone-50 flex flex-col justify-start items-center gap-10 p-2 overflow-y-auto overflow-x-hidden" />
 
-<header class="w-full h-fit flex flex-col md:flex-row gap-3 md:gap-10 border-b-4 border-rose-of-sharon-700 justify-start items-center md:py-2 md:px-5">
-    <h1 class="text-4xl w-fit"><a href="/">SeaGrass</a></h1>
+<header class="w-full h-fit flex flex-col md:flex-row gap-3 md:gap-20 border-b-4 border-rose-of-sharon-700 justify-start items-center md:py-2 md:px-5">
+    <a href="/" class="border-x-4 px-10 border-science-blue-600 rounded-md border-b-4 border-b-stone-50 hover:border-b-science-blue-600 flex flex-row gap-5 justify-center items-center">
+        <h1 class="text-5xl w-fit">SeaGrass</h1>
+        <img src="favicon.svg" width="64" height="64" alt="seagrass">
+    </a>
 
     <section class="w-full h-full flex flex-col justify-center items-center md:items-start px-2 md:px-0">
         <h2 class="text-xl">Brendan Craig Griffiths</h2>
@@ -25,7 +27,7 @@
     </section>
 </header>
 
-<main class="w-full h-2/5 min-h-fit md:min-h-[88vh] px-2 md:px-5">
+<main class="w-full h-2/5 min-h-fit md:min-h-[86vh] px-2 md:px-5">
     <slot />
 </main>
 
