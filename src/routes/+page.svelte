@@ -1,3 +1,8 @@
+<script lang="ts">
+    import InternalLink from "$lib/components/internal-link.svelte"
+    import ExternalLink from "$lib/components/external-link.svelte"
+</script>
+
 <div class="w-full md:w-2/3 h-full flex flex-col justify-start items-center ">
     <section class="w-2/3 flex md:hidden flex-col justify-center items-center border-b-4">
         <h1 class="text-3xl">Seagrass</h1>
@@ -15,7 +20,7 @@
 
             <p>
                 My research interests are in computation and complexity theory.
-                I'd like to one day solve <a class="underline text-blue-500" href="https://en.wikipedia.org/wiki/P_versus_NP_problem">P vs NP</a>, but until that point I am focusing on Reinforcement Learning and other Machine Learning.
+                I'd like to one day solve <ExternalLink link="https://en.wikipedia.org/wiki/P_versus_NP_problem">P vs NP</ExternalLink>, but until that point I am focusing on Reinforcement Learning and other Machine Learning.
             </p>
         </article>
 
@@ -42,19 +47,19 @@
             <h3 class="text-lg border-b-2">What I have done</h3>
 
             <ul class="list-disc list-inside">
-                <li>BSc (Hons) Thesis: <a class="underline text-blue-500" href='/projects/computing-ramnums'>Computing Ramsey Numbers</a></li>
-                <li>BSc Software Design Project: <a class="underline text-blue-500" href='/projects/recipio'>Recipio</a></li>
-                <li>BSc Graphics Project: <a class="underline text-blue-500" href='/projects/the-magic-library'>The Magic Library</a></li>
-                <li>ThreeJS & AmmoJS Game Engine: <a class="underline text-blue-500" href='/projects/w3ads'>W3ads</a></li>
+                <li>BSc (Hons) Thesis: <InternalLink link='/projects/computing-ramnums'>Computing Ramsey Numbers</InternalLink></li>
+                <li>BSc Software Design Project: <InternalLink link='/projects/recipio'>Recipio</InternalLink></li>
+                <li>BSc Graphics Project: <InternalLink link='/projects/the-magic-library'>The Magic Library</InternalLink></li>
+                <li>ThreeJS & AmmoJS Game Engine: <InternalLink link='/projects/w3ads'>W3ads</InternalLink></li>
             </ul>
         </article>
 
         <article class="flex flex-col gap-2 w-full">
             <h3 class="text-lg border-b-2">Quick Links</h3>
 
-            <ul class="list-disc list-inside">
-                <li><a class="underline text-blue-500">Scientific Work</a></li>
-                <li><a class="underline text-blue-500">CV</a></li>
+            <ul class="flex flex-row justify-start items-center gap-3 flex-wrap">
+                <li><InternalLink link="">Scientific Work</InternalLink></li>
+                <li><InternalLink link="">Curriculum Vitae</InternalLink></li>
             </ul>
         </article>
     </section>
