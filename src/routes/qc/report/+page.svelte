@@ -1,1 +1,0 @@
-<h3 class="text-3xl">Research Report</h3>
