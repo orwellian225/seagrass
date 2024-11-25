@@ -1,55 +1,66 @@
 <script lang="ts">
-    import { Github, Linkedin } from "lucide-svelte/icons";
+    import InternalLink from "$lib/components/internal-link.svelte"
+    import ExternalLink from "$lib/components/external-link.svelte"
 </script>
 
-<div class="w-full h-full flex flex-col md:flex-row gap-5 justify-between items-start px-2 md:px-32 py-5">
-    <section class="home-section">
-        <h2>Me Things</h2>
-
-        <ul class="w-full space-y-2">
-          <li>I'm a South African programmer, born and raised in the Vale. I spend my time programming, reading, and watching movies in far too expensive IMAX cinemas.</li>
-          <li>SeaGrass comes from my initials and all round pretentious cleverness. It's just an easy reference for people to find my website! Which you've done a great job of btw :)</li>
-          <li class="flex flex-row md:hidden py-1 gap-2 justify-start items-center">
-            Useful stuff:
-            <a class="p-1 rounded-xl border-2 border-black hover:border-rose-of-sharon-800" href="https://github.com/orwellian225"><Github /></a>
-            <a class="p-1 rounded-xl border-2 border-black hover:border-rose-of-sharon-800" href="https://www.linkedin.com/in/brendan-griffiths-65a142226"><Linkedin /></a>
-          </li>
-        </ul>
+<div class="w-full md:w-2/3 h-full flex flex-col justify-start items-center ">
+    <section class="w-2/3 flex md:hidden flex-col justify-center items-center border-b-4">
+        <h1 class="text-3xl">Seagrass</h1>
+        <h2 class="text-lg md:text-xl">Brendan Griffiths</h2>
     </section>
 
-    <section class="home-section">
-        <h2>Thought Things</h2>
+    <section class="w-4/5 md:w-2/3 h-full flex flex-col justify-start items-center py-5 gap-5">
+        <article class="flex flex-col gap-2">
+            <h3 class="text-lg border-b-2">Who am I</h3>
 
-    </section>
+            <p>
+                I am a South African programmer born and raised in the Value.
+                I enjoy reading, video games, rock climbing and other stereotypical hobbies.
+            </p>
 
-    <section class="home-section">
-        <h2>Doing Things</h2>
+            <p>
+                My research interests are in computation and complexity theory.
+                I'd like to one day solve <ExternalLink link="https://en.wikipedia.org/wiki/P_versus_NP_problem">P vs NP</ExternalLink>, but until that point I am focusing on Reinforcement Learning and other Machine Learning.
+            </p>
+        </article>
 
-        <ul class="w-full space-y-2">
-          <li>BSc Hons Computer Science @ <a class="underline text-rose-of-sharon-900 hover:text-rose-of-sharon-950" href="https://www.wits.ac.za/course-finder/postgraduate/science/computer-science/">Wits</a></li>
-          <li>Research Project:<br><a class="border-x-2 px-2 border-rose-of-sharon-700 rounded-md hover:border-b-2" href="/qc">Quantum Computing and Graph Theory</a></li>
-        </ul>
-    </section>
+        <article class="flex flex-col gap-2">
+            <h3 class="text-lg border-b-2">What I am doing</h3>
 
-    <section class="home-section">
-        <h2>Done Things</h2>
+            <p>
+                My Masters in CS is focused on teaching RL agents how NOT to do an action, without it first learning to do it.
+                This has applications in agent safety and control, but it also helps better understand the dymanics of World Value Functions and how an agent learns.
+            </p>
 
-        <ul class="w-full space-y-2">
-          <li>BSc Computer Science @ <a class="underline text-rose-of-sharon-900 hover:text-rose-of-sharon-950" href="https://www.wits.ac.za/course-finder/undergraduate/science/computer-science/">Wits</a></li>
-          <li>Made a <a class="underline text-rose-of-sharon-900 hover:text-rose-of-sharon-950" href="https://wits-sg.github.io/CGV-Project/">video game</a> with some friends and for some marks</li>
-          <li>Built a <a class="underline text-rose-of-sharon-900 hover:text-rose-of-sharon-950" href="https://recipio.co.za">food and recipe social media</a> with the same friends. We won the best project for it even</li>
-        </ul>
-    </section>
+            <p>
+                I am also actively researching Complexity Theory both for classical and quantum computers.
+                The numerous open questions about everything is awfully tantalizing.
+            </p>
 
-    <section class="home-section">
-        <h2>Cool Things</h2>
+            <p>
+                In the interrim, I am a freelance software developer, building websites, mobile apps and whatever else strikes my fancy.
+                I enjoy systems and game development mostly however, with hobby projects in both fields.
+            </p>
+        </article>
 
-        <ul class="w-full space-y-2">
-          <li><a class="border-x-2 px-2 border-rose-of-sharon-700 rounded-md hover:border-b-2" href="/turing-machines">Turing Machines</a></li>
-        </ul>
-    </section>
+        <article class="flex flex-col gap-2 w-full">
+            <h3 class="text-lg border-b-2">What I have done</h3>
 
-    <section class="home-section">
-        <h2>Stray Things</h2>
+            <ul class="list-disc list-inside">
+                <li>BSc (Hons) Thesis: <InternalLink link='/projects/computing-ramnums'>Computing Ramsey Numbers</InternalLink></li>
+                <li>BSc Software Design Project: <InternalLink link='/projects/recipio'>Recipio</InternalLink></li>
+                <li>BSc Graphics Project: <InternalLink link='/projects/the-magic-library'>The Magic Library</InternalLink></li>
+                <li>ThreeJS & AmmoJS Game Engine: <InternalLink link='/projects/w3ads'>W3ads</InternalLink></li>
+            </ul>
+        </article>
+
+        <article class="flex flex-col gap-2 w-full">
+            <h3 class="text-lg border-b-2">Quick Links</h3>
+
+            <ul class="flex flex-row justify-start items-center gap-3 flex-wrap">
+                <li><InternalLink link="">Scientific Work</InternalLink></li>
+                <li><InternalLink link="">Curriculum Vitae</InternalLink></li>
+            </ul>
+        </article>
     </section>
 </div>
