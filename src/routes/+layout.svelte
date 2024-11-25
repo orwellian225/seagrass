@@ -12,7 +12,7 @@
 <svelte:body class="w-screen min-h-screen h-fit bg-stone-50 flex flex-col justify-start items-center gap-10 p-2 overflow-y-auto overflow-x-hidden" />
 
 <header class="w-full h-fit flex flex-col md:flex-row gap-3 md:gap-20 border-b-4 justify-start items-center py-1 md:py-2 md:px-5">
-    <nav class="flex flex-row items-center space-x-10 justify-center w-full py-2 md:py-0">
+    <nav class="flex flex-row items-center space-x-2 md:space-x-10 justify-center w-full py-2 md:py-0">
         <NavLink link="/">Home</NavLink>
         <NavLink link="/projects/">Projects</NavLink>
 
